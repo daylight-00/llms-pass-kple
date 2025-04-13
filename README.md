@@ -2,6 +2,10 @@
 
 ![Image](https://github.com/user-attachments/assets/eb4f4797-8059-4707-b845-122a1aeea2b0)
 
+This repository contains the code, data, and evaluation scripts used to benchmark large language models on the Korean Pharmacist Licensing Examination (KPLE), as described in our paper:  
+*"Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study."*  
+📄 [Read the full paper]()
+
 ## Abstract
 ### Background
 Large language models (LLMs) have shown remarkable advancements in natural language processing, with increasing interest in their ability to handle tasks requiring expert-level knowledge. This study evaluates the capabilities of LLMs in a high-stakes professional setting by examining their performance on the Korean Pharmacist Licensing Examination (KPLE), a comprehensive test essential for pharmacist certification in South Korea.
@@ -15,3 +19,16 @@ Seven models passed all six years of both the English and Korean exams, includin
 
 ### Conclusion
 LLMs can pass the KPLE, demonstrating their growing potential as tools in professional domains. Their strengths currently lie in memorization and language comprehension, though weaknesses remain in complex reasoning and region-specific knowledge. While not substitutes for human pharmacists, LLMs may support and elevate pharmacists' professional expertise and efficiency. They hold promise as assistants in education, decision support, and administrative tasks. Continued improvements through fine-tuning, domain-specific training, and architectural advances will be key to ensuring their safe and effective use in pharmacy practice.
+
+## Citation
+If you use this code or dataset in your work, please cite:
+
+```bibtex
+@article{jang2025kple,
+  title     = {Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study},
+  author    = {Jang, David Hyunyoo and Lee, Juyong},
+  journal   = {medRxiv},
+  year      = {2025},
+  note      = {Preprint}
+}
+```
