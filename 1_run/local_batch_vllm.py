@@ -99,7 +99,7 @@ def main():
 #     run.delete()
 
 # def main():
-#     model_path = "/home/hwjang/project/LLM/data/SOLAR-0-70b-16bit"
+#     model_path = "upstage/SOLAR-0-70b-16bit"
 #     prompt_func_list = [prompt_solar]
 #     run = ModelResponder(model_path, exam_list_local, prompt_func_list, inst_list)
 #     run.process_files()
