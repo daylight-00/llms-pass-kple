@@ -1,6 +1,7 @@
 # Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study
 
 ![Image](https://github.com/user-attachments/assets/eb4f4797-8059-4707-b845-122a1aeea2b0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15209033.svg)](https://doi.org/10.5281/zenodo.15209033)
 
 This repository contains the code, data, and evaluation scripts used to benchmark large language models on the Korean Pharmacist Licensing Examination (KPLE), as described in our paper:  
 *"Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study."*  
@@ -18,6 +19,7 @@ We assessed 27 LLMs, including proprietary models (e.g., GPT-4o, Claude 3.5 Sonn
 
 ### Results
 ![Image](3_plot/.plot/1-combined.svg)
+
 Seven models passed all six years of both the English and Korean exams, including five proprietary and two open-source models. Proprietary models generally outperformed open-source counterparts, though the performance gap narrowed substantially over time. The best-performing proprietary model, Claude 3.5 Sonnet, scored in the top 12% of human examinees. Larger models achieved higher accuracy overall, but recent smaller models also showed strong performance due to architectural and training improvements. Notably, LLMs struggled in topics requiring complex calculations and highly localized knowledge, indicating areas for targeted improvement through domain-specific fine-tuning.
 
 ### Conclusion
