@@ -1,10 +1,10 @@
-# Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study
+# Proprietary and Open-Source Large Language Models on the Korean Pharmacist Licensing Examination: A Comparative Benchmarking Study
 
 ![Image](https://github.com/user-attachments/assets/eb4f4797-8059-4707-b845-122a1aeea2b0)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15209033.svg)](https://doi.org/10.5281/zenodo.15209033)
 
 This repository contains the code, data, and evaluation scripts used to benchmark large language models on the Korean Pharmacist Licensing Examination (KPLE), as described in our paper:  
-*"Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study."*  
+*"Proprietary and Open-Source Large Language Models on the Korean Pharmacist Licensing Examination: A Comparative Benchmarking Study."*  
 📄 [Read the full paper](https://www.medrxiv.org/content/10.1101/2025.04.15.25325584)
 
 #### Note
@@ -12,25 +12,25 @@ Due to copyright restrictions, the original KPLE datasets and processed exam tex
 
 ## Abstract
 ### Background
-Large language models (LLMs) have shown remarkable advancements in natural language processing, with increasing interest in their ability to handle tasks requiring expert-level knowledge. This study evaluates the capabilities of LLMs in a high-stakes professional setting by examining their performance on the Korean Pharmacist Licensing Examination (KPLE), a comprehensive test essential for pharmacist certification in South Korea.
+Large language models (LLMs) have shown remarkable advancements in natural language processing, with increasing interest in their ability to handle tasks requiring expert-level knowledge. While previous studies have evaluated specific LLM models on pharmacist licensing examinations, comprehensive benchmarking across diverse model architectures, sizes, and generations remains limited. This study addresses this gap by systematically evaluating LLM capabilities on the Korean Pharmacist Licensing Examination (KPLE), a high-stakes professional certification test.
 
 ### Methods
-We assessed 27 LLMs, including proprietary models and open-source models using both the original Korean and English-translated versions of the KPLE from 2019 to 2024. Exam questions were translated, formatted, and analyzed using accuracy-based and score-based metrics. Models were grouped by size and type, and evaluated for subject-specific performance, error rates, and progression over time. 
+We conducted a comprehensive benchmark of 27 LLMs, spanning proprietary models (GPT, Claude, Gemini, PaLM series) and open-source models across three size categories (small: 4-10B, medium: 14-35B, large: 70-104B parameters), using both original Korean and English-translated KPLE examinations from 2019 to 2024. Models were evaluated using accuracy-based and score-based metrics, with systematic analysis of subject-specific performance, temporal progression, cross-linguistic capabilities, and item-level difficulty patterns.
 
 ### Results
 ![Image](3_plot/.plot/1-combined.svg)
 
-Seven models passed all six years of both the English and Korean exams, including five proprietary and two open-source models. Proprietary models generally outperformed open-source counterparts, though the performance gap narrowed substantially over time. The best-performing proprietary model, Claude 3.5 Sonnet, scored in the top 12% of human examinees. Larger models achieved higher accuracy overall, but recent smaller models also showed strong performance due to architectural and training improvements. Notably, LLMs struggled in topics requiring complex calculations and highly localized knowledge indicating the future improvement direction for the pharmaceutical use of LLMs through domain-specific fine-tuning.
+Seven models achieved passing scores across all six examination years in both languages, demonstrating substantial progress in LLM capabilities. The top-performing model, Claude 3.5 Sonnet, ranked in the top 12\% of human examinees. Temporal analysis revealed rapid improvement, particularly among open-source models, with performance gaps narrowing considerably over the 12-month study period. Parameter size correlated with performance following a logarithmic relationship, though recent architectural innovations enabled smaller models to outperform larger predecessors. Cross-linguistic evaluation showed reduced performance disparities in newer models. Subject-level analysis identified consistent strengths in memorization-intensive topics (Biopharmacy) and weaknesses in domains requiring complex calculations (Physical Pharmacy, Pharmaceutical Analysis) and region-specific knowledge (Medical Health Legislation, Pharmaceutical Quality Science).
 
 ### Conclusion
-LLMs can pass the KPLE, demonstrating their growing potential as tools in professional domains. Their strengths currently lie in memorization and language comprehension, though weaknesses remain in complex reasoning and region-specific knowledge. While not substitutes for human pharmacists, LLMs may support and elevate pharmacists' professional expertise and efficiency. They hold promise as assistants in education, decision support, and administrative tasks. Continued improvements through fine-tuning, domain-specific training, and architectural advances will be key to ensuring their safe and effective use in pharmacy practice.
+This comprehensive benchmarking study demonstrates that current LLMs can successfully pass the KPLE, with capabilities spanning diverse model architectures and sizes. Performance improvements are driven by multiple factors including parameter scaling, architectural innovations, enhanced multilingual training data, and fine-tuning strategies. Models excel in memorization and language comprehension but show limitations in complex reasoning and nation-specific knowledge domains. These findings highlight opportunities for targeted improvement through domain-specific fine-tuning and specialized training. While LLMs cannot substitute for human pharmacists, they show promise as complementary tools for education, decision support, and administrative tasks. Future development should focus on addressing identified weaknesses while leveraging the distinct advantages of both proprietary and open-source approaches to ensure safe and effective pharmaceutical applications.
 
 ## Citation
 If you use this code or dataset in your work, please cite:
 
 ```bibtex
 @article{jang2025kple,
-  title     = {Large Language Models Pass the Korean Pharmacist Licensing Examination: A Benchmarking Study},
+  title     = {Proprietary and Open-Source Large Language Models on the Korean Pharmacist Licensing Examination: A Comparative Benchmarking Study},
   author    = {Jang, David Hyunyoo and Lee, Juyong},
   journal   = {medRxiv},
   year      = {2025},
